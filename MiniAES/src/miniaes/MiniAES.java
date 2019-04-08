@@ -16,7 +16,7 @@ public class MiniAES {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Encryptor encrypt = new Encryptor("1010101010101010");
-        System.out.println(encrypt.outputArray());        
+        Key key = new Key("1010101010101010");
+        Encryptor encryptor = new Encryptor("1010101010101010", key);
     }    
 }

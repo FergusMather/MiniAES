@@ -5,10 +5,28 @@
  */
 package miniaes;
 
+import java.util.HashMap;
+
 /**
  *
  * @author 1812962
  */
 public class Maps {
+    HashMap forwardSubTable;
+    HashMap inverseSubTable;
+    int[][] hexTable;
+    
+    Maps(){
+        //generates forward table if false and inverse table if true
+        //generates hexTable 2d array
+    }
+    
+    void getMapValue(){
+        //return nibble sub value for index
+    }       
+    
+    void getHexCalculation(){
+        //return multiplication value from hex indexs
+    }
     
 }

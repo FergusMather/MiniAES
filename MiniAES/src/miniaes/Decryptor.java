@@ -10,5 +10,15 @@ package miniaes;
  * @author 1812962
  */
 public class Decryptor {
+    String cipherText;
+    Key key;
+    Calculator calculator = new Calculator();
     
+    Decryptor(String bitString, Key key){
+        
+    }
+    
+    void decrypt(){
+        
+    }
 }
