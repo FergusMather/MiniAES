@@ -16,6 +16,7 @@ public class Maps {
     HashMap inverseSubTable;
     int[][] hexTable;
     
+    //Needs coded
     Maps(){
         //generates forward table if false and inverse table if true
         //generates hexTable 2d array
