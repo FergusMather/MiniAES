@@ -15,10 +15,12 @@ public class Key {
     String [][] keyTwo = new String [2][2];    
     Calculator calculator = new Calculator();
     
+    //Needs coded
     Key(String userKey){        
         //generate key0 key1 and key2 from initial string
     }    
     
+    //Needs coded
     public String[][] getKey(int num){
         //return key according to num
         String[][] temp = new String[1][1];

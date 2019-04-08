@@ -21,10 +21,12 @@ public class Maps {
         //generates hexTable 2d array
     }
     
+    //Needs coded
     void getMapValue(){
         //return nibble sub value for index
     }       
     
+    //Needs coded
     void getHexCalculation(){
         //return multiplication value from hex indexs
     }

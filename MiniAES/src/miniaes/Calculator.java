@@ -16,46 +16,77 @@ public class Calculator {
         
     }
     
+    //Needs coded
     public String[][] mixColumns(){
         String[][] temp = new String[1][1];
         temp[0][0] = "Hello";
         return temp;
     }
     
-    public String[][] switchRows(){    
-        String[][] temp = new String[1][1];
-        temp[0][0] = "Hello";
-        return temp;
+    //Coded needs tested
+    public String[][] switchRows(String[][] array){    
+        String temp = array[1][0];
+        array[1][0] = array [1][1];
+        array[1][1] = temp;
+        return array;
     }
     
-    public String nibbleSub(){
+    //Needs coded
+    public String nibbleSub(String nibble){
         return "String";
     }
     
-    public String[][] addKey(){
-        String[][] temp = new String[1][1];
-        temp[0][0] = "Hello";
-        return temp;
+    //Coded needs tested
+    public String[][] addKey(String[][] array1, String[][] array2){
+        for(int row = 0; row<array1.length; row++){
+            for(int column = 0; column<array1[row].length; column++){
+                array1[row][column] = nibbleXOR(array1[row][column],array2[row][column]);
+            }
+        }
+        return array1;
     }
     
-    public String arrayToString(){
-        return "String";
+    //Coded needs tested
+    public String arrayToString(String[][] array){
+        String output = "";
+        for(int row = 0; row<array.length; row++){
+            for(int column = 0; column<array[row].length; column++){
+                output += array[row][column];
+            }
+        }
+        return output;
     }
     
-    public String[][] stringToArray(){
-        String[][] temp = new String[1][1];
-        temp[0][0] = "Hello";
-        return temp;
+    //Coded and tested and works
+    public String[][] stringToArray(String bitString){
+        int nibbleSize = 4;
+        int bitStringPosition = 0;
+        String[][] outputArray = {{"",""},{"",""}};
+        for(int row = 0; row<outputArray.length; row++){
+            for(int column = 0; column<outputArray[row].length; column++){
+                for(int character = 0; character<nibbleSize; character++){
+                    outputArray[row][column] += bitString.charAt(bitStringPosition);
+                    bitStringPosition ++;
+                }
+            }
+        }
+        return outputArray;
     }
     
-    public String nibbleXOR(){
-        return "string";
-    }
-    
-    public static String sayHello(){
-        return "hello";
-    }
-    
+    //Coded needs tested
+    public String nibbleXOR(String nibble1, String nibble2){
+        String outputNibble = "";
+        for(int i = 0; i<nibble1.length(); i++){
+            if(nibble1.equals(nibble2)){
+                outputNibble += 0;
+            }
+            else{
+                outputNibble += 1;
+            }
+        }
+        return outputNibble;
+    }   
+       
     //void convertToHex(){
         
     //}

@@ -17,6 +17,6 @@ public class MiniAES {
     public static void main(String[] args) {
         // TODO code application logic here
         Key key = new Key("1010101010101010");
-        Encryptor encryptor = new Encryptor("1010101010101010", key);
+        Encryptor encryptor = new Encryptor("1010101010101010", key);       
     }    
 }

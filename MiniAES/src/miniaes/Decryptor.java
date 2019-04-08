@@ -14,10 +14,12 @@ public class Decryptor {
     Key key;
     Calculator calculator = new Calculator();
     
-    Decryptor(String bitString, Key key){
-        
+    Decryptor(String bitString, Key userKey){
+        this.cipherText = bitString;
+        this.key = userKey;
     }
     
+    //Needs coded
     void decrypt(){
         
     }

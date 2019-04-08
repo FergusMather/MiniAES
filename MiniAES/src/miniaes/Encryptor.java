@@ -15,17 +15,21 @@ public class Encryptor {
     Calculator calculator = new Calculator();
     
     Encryptor(String bitString, Key userKey){
-
+        this.plainText = bitString;
+        this.key = userKey;
     }
+    
     
     /**
      *
+     * @return 
      */
     public String encrypt(){
-        calculator.addKey();
-        calculator.nibbleSub();
-        calculator.switchRows();
-        calculator.mixColumns();
+        //Needs coded
+        //calculator.addKey();
+        //calculator.nibbleSub();
+        //calculator.switchRows();
+        //calculator.mixColumns();
         return "String";    
     }
     
